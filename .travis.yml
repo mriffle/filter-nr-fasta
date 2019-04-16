@@ -7,8 +7,8 @@ jdk:
 sudo: true
 
 before_install:
-  sudo apt-get remove gradle
-  sudo add-apt-repository ppa:cwchien/gradle
-  sudo apt-get update
-  sudo apt install gradle
+  - sudo apt-get remove gradle
+  - sudo add-apt-repository ppa:cwchien/gradle
+  - sudo apt-get update
+  - sudo apt install gradle
 
