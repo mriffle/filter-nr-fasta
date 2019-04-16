@@ -74,6 +74,8 @@ This command also allocates 64 gigs of RAM for this Java process.
 ```
 java -Xmx64g -jar downloadFilteredNR.jar
      -t 2
+     -d refseq
+     -d uniprot
      -a ../tax-dump-old/prot.accession2taxid.gz
      -n ../taxonomy_dump/nodes.dmp
      -f ../sequences/nr.gz >bacteria-refseq-uniprot.nr.fasta
