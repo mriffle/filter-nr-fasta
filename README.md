@@ -41,6 +41,9 @@ taxa (such as bacteria (NCBI taxonomy: 2)). If you run out of RAM (heap space) w
 running this program, give Java more RAM by using the -Xmx parameter as shown in the
 bacteria example below.
 
+You will need to know the NCBI taxonomy ID(s) you want to filter on. You can look them up
+at https://www.ncbi.nlm.nih.gov/taxonomy
+
 Get Help
 ---------
 ```
