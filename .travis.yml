@@ -4,9 +4,11 @@ jdk:
   - oraclejdk11
 
 # see https://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure
-sudo: false
+sudo: true
 
 before_install:
-  gradle wrapper
-  ./gradlew wrapper --gradle-version 5.3
+  sudo apt-get remove gradle
+  sudo add-apt-repository ppa:cwchien/gradle
+  sudo apt-get update
+  sudo apt install gradle
 
