@@ -1,0 +1,44 @@
+/*
+    Build executable jar file with gradle shadowJar
+    More info at: https://imperceptiblethoughts.com/shadow/
+    
+    Requires Gradle 5+
+ */
+
+plugins {
+    id 'com.github.johnrengelman.shadow' version '5.0.0'
+}
+
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+sourceCompatibility = 1.9
+targetCompatibility = 1.9
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'info.picocli:picocli:4.0.0-alpha-1'
+    compile fileTree(dir: 'lib/main', include: ['*.jar'])
+    testCompile "junit:junit:4.12"
+}
+
+processResources {
+    from ('src/main/java') {
+        include '**/*.txt'
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'net.protio.filter_nr.main.MainProgram'
+    }
+}
+
+shadowJar {
+    baseName = 'filterNRFASTA'
+    classifier = null
+    version = null
+}
