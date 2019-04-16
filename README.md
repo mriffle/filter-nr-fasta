@@ -65,9 +65,9 @@ java -jar downloadFilteredNR.jar
      -f ../sequences/nr.gz >human.nr.fasta
 ```
 
-Get all bacterial sequences/accessions present in refseq or uniprot
+Output all bacterial sequences/accessions present in refseq or uniprot
 ---------------------------------------------------------------------
-Includes sequences and accessions corresponding to humans or more specific. Outputs as
+Includes sequences and accessions corresponding to any bacteria. Outputs as
 "bacteria-refseq-uniprot.nr.fasta" file.
 
 This command also allocates 64 gigs of RAM for this Java process.
