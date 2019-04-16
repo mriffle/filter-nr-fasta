@@ -57,7 +57,7 @@ Outputs only sequences and accessions corresponding to human. Outputs as "human.
 ```
 java -jar downloadFilteredNR.jar
      -t 9606
-     -a ../tax-dump-old/prot.accession2taxid
+     -a ../tax-dump-old/prot.accession2taxid.gz
      -n ../taxonomy_dump/nodes.dmp
      -f ../sequences/nr.gz >human.nr.fasta
 ```
@@ -71,7 +71,7 @@ This command also allocates 64 gigs of RAM for this Java process.
 ```
 java -Xmx64g -jar downloadFilteredNR.jar
      -t 2
-     -a ../tax-dump-old/prot.accession2taxid
+     -a ../tax-dump-old/prot.accession2taxid.gz
      -n ../taxonomy_dump/nodes.dmp
      -f ../sequences/nr.gz >bacteria-refseq-uniprot.nr.fasta
 ```
