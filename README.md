@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mriffle/filter-nr-fasta.svg?branch=master)](https://travis-ci.org/mriffle/filter-nr-fasta)
+
 # filter-nr-fasta
 Filter the NCBI nr FASTA database on any arbitrary taxonomy or source database.
 
