@@ -20,7 +20,7 @@ public class MainProgram implements Runnable {
     private Integer[] taxonomyIds;
 
     @CommandLine.Option(names = { "-d", "--database" }, description = "[Optional] The name of the databases to use, " +
-            "can be used multiple times. Must be one of: uniprot, refseq, pdb, genbank. Default is to include all." )
+            "can be used multiple times. Must be one of: uniprot, refseq, pdb, genbank, pir, or prf. Default is to include all." )
     private String[] databases;
 
     @CommandLine.Option(names = { "-n", "--nodes" }, required = true, description = "Path to NCBI Taxonomy nodes file (nodes.dmp " +
